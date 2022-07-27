@@ -6,6 +6,11 @@ This is a modification on KoBeW's work to suit my needs for my project. This plu
 
 I find this particularly useful because I like to create release branches such as `release-1.0.0` when I'm ready to share my project. When I create this branch, the plugin will automatically copy the branch name into my game, saving me from having to remember to update some internal variable.
 
+## How to install
+
+1. Drag and drop the **AutoExportVersion** directory into the **addons** directory inside of your project.
+2. In Godot go to Project > Project Settings > Plugins and then enable the AutoExportVersion plugin.
+
 ## How to access the branch name and version:
 
 Upon first activation and then after each project export, the plugin will update your `version.gd` file. The plugin contains a constant value called VERSION, which is the current version string. Example usage goes like this:
