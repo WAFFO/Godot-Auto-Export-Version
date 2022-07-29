@@ -61,8 +61,8 @@ class AEVExporter extends EditorExportPlugin:
   var plugin
   
   func _export_begin(features: PoolStringArray, is_debug: bool, path: String, flags: int):
-    var version: String = plugin._fetch_version(features)
-    var branch: String = plugin._fetch_branch(features)
+    var version: String = plugin._fetch_version()
+    var branch: String = plugin._fetch_branch()
     if version.empty():
       push_error("Version string is empty. Make sure your _fetch_version() is configured properly.")
     
