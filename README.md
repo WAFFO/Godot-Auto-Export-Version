@@ -13,7 +13,7 @@ I find this particularly useful because I like to create release branches such a
 
 ## How to access the branch name and version:
 
-Upon first activation and then after each project export, the plugin will update your `version.gd` file. The plugin contains a constant value called VERSION, which is the current version string. Example usage goes like this:
+Upon first activation and then after each project export, the plugin will update your `version.gd` file. The plugin contains two constant values called `BRANCH` and `VERSION`. Example usage goes like this:
 ```GDScript
 func _ready():
   var v = load("res://version.gd")
